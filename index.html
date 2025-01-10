@@ -39,8 +39,7 @@
 </head>
 <body>
 
-
-
+  
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
@@ -84,7 +83,7 @@
                   <span>Paper</span>
                 </a>
               </span>
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="./static/motionbridge_1.mp4"
                    class="external-link button is-normal is-rounded is-dark"
                    target="_blank">
@@ -93,7 +92,7 @@
                     </span>
                     <span>Video</span>
                 </a>
-            </span>
+            </span> -->
               <!-- Code Link. -->
 <!--               <span class="link-block">
                 <a href=""
@@ -114,9 +113,20 @@
 </section>
 
 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" height="100%" alt="MotionBridge" src="./static/teaser.gif"/>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">MotionBridge: </span> Dynamic Video Inbetweening with Flexible Controls
+      </h2>
+    </div>
+  </div>
+</section>
 
 
 <section class="section">
+
   <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
@@ -139,504 +149,454 @@
       </div>
     </div>
     <!--/ Abstract. -->
+
+
+     <!-- Paper video. -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Video</h2>
+      <div class="publication-video">
+        <video width="120%" autoplay muted controls>
+          <source src="./static/motionbridge_1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+  <!--/ Paper video. -->
 </section>
 
 
 
-<section class="section" style="display: flex; justify-content: center; align-items: center; height: auto;">
+  <section class="section" style="display: flex; justify-content: center; align-items: center; height: auto;">
+  <div class="hero-body">
+
     <div class="container" style="text-align: center; width: 100%; max-width: 1500px; margin-bottom: 1rem;">
+      <h2 class="title is-3 has-text-centered">Controllable Inbetweening</h2>
+      <p>We present results using motion trajectories and masks as inputs to 
+          control the in-between generation between the provided input frames.</p>
+    </div>
+    <div class="container is-max-desktop text-align: center; width: 100%; max-width: 1500px; margin-bottom: 1rem;">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div style="width: 100%; max-width: 1000px;">
+          <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+            <source src="./static/videos/01_controllable/01.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
 
-        <h2 class="title is-3 has-text-centered">Controllable Inbetweening</h2>
-        <p>We present results using motion trajectories and masks as inputs to 
-            control the in-between generation between the provided input frames.</p>
-            <hr>
-        <!-- Video Gallery Section -->
-        <div class="media-gallery" style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-          
-          <!-- First Video -->
-          <div style="width: 100%; max-width: 1000px;">
-            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-              <source src="./static/videos/01_controllable/01.mp4" type="video/mp4">
+        <div style="width: 100%; max-width: 1000px;">
+          <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+            <source src="./static/videos/01_controllable/02.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div style="display: flex; width: 100%; max-width: 1200px; justify-content: space-between; align-items: center;">
+
+          <div style="width: 25%; display: flex; justify-content: center;">
+            <video style="height: 30%; object-fit: cover;">
+              <source src="./static/videos/01_controllable/17_0.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
-          <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
-
-          
-          <div style="width: 100%; max-width: 1000px;">
-            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-              <source src="./static/videos/01_controllable/02.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
-
-
-
-
-          <div style="width: 100%; max-width: 1000px;">
-            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-              <source src="./static/videos/01_controllable/04.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
-
         
-          
-          <div style="display: flex; width: 100%; max-width: 1200px; justify-content: space-between;">
-            <div style="width: 100%;">
-              <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                <source src="./static/videos/01_controllable/06.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          
-            <div style="width: 100%;">
-              <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                <source src="./static/videos/01_controllable/07.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
+          <div style="width: 25%; display: flex; justify-content: center;">
+            <video controls autoplay muted loop style="height: 100%; object-fit: cover;">
+              <source src="./static/videos/01_controllable/17_1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
-
-          <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
-
-
-          <div style="display: flex; width: 100%; max-width: 1200px; justify-content: space-between;">
-            <div style="width: 100%;">
-              <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                <source src="./static/videos/01_controllable/09.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          
-            <div style="width: 100%;">
-              <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                <source src="./static/videos/01_controllable/16.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-
-          <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
-
         
-          <div style="display: flex; width: 100%; max-width: 1200px; justify-content: space-between;">
-            <div style="width: 100%;">
-              <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                <source src="./static/videos/01_controllable/13.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          
-            <div style="width: 100%;">
-              <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                <source src="./static/videos/01_controllable/15.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
+          <div style="width: 25%; display: flex; justify-content: center;">
+            <video controls autoplay muted loop style="height: 100%; object-fit: cover;">
+              <source src="./static/videos/01_controllable/17_2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
-
-          <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
-
-          <div style="display: flex; width: 100%; max-width: 1200px; justify-content: space-between; align-items: center;">
-
-            <div style="width: 25%; display: flex; justify-content: center;">
-              <video style="height: 30%; object-fit: cover;">
-                <source src="./static/videos/01_controllable/17_0.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          
-            <div style="width: 25%; display: flex; justify-content: center;">
-              <video controls autoplay muted loop style="height: 100%; object-fit: cover;">
-                <source src="./static/videos/01_controllable/17_1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          
-            <div style="width: 25%; display: flex; justify-content: center;">
-              <video controls autoplay muted loop style="height: 100%; object-fit: cover;">
-                <source src="./static/videos/01_controllable/17_2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          
-            <div style="width: 25%; display: flex; justify-content: center;">
-              <video controls autoplay muted loop style="height: 100%; object-fit: cover;">
-                <source src="./static/videos/01_controllable/17_3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            
+        
+          <div style="width: 25%; display: flex; justify-content: center;">
+            <video controls autoplay muted loop style="height: 100%; object-fit: cover;">
+              <source src="./static/videos/01_controllable/17_3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
           
+        </div>
 
-          <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
+        <div style="width: 100%; max-width: 1000px;">
+          <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+            <source src="./static/videos/01_controllable/04.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
 
-          <!-- Masked videos -->
-          <h4 class="title is-4 has-text-centered">Controllable Inbetweening: With Masks</h4>
-          <p>Using masks allows for greater control over generation. In these examples, 
-            the red mask indicates static regions, while the blue mask highlights areas of 
-            dynamic motion. The static mask ensures that specified regions remain stable 
-            while still adhering to the conditions of the last frame. Whereas, dynamic 
-            masks define areas of movement, providing more precise control over motion.
-          </p>
-          <div style="width: 100%; max-width: 1200px;">
+        <div style="width: 100%;">
+          <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+            <source src="./static/videos/01_controllable/06.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      
+        <div style="width: 100%;">
+          <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+            <source src="./static/videos/01_controllable/07.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div style="width: 100%;">
+          <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+            <source src="./static/videos/01_controllable/09.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      
+        <div style="width: 100%;">
+          <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+            <source src="./static/videos/01_controllable/16.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div style="width: 100%;">
+          <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+            <source src="./static/videos/01_controllable/13.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      
+        <div style="width: 100%;">
+          <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+            <source src="./static/videos/01_controllable/15.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div style="width: 100%;">
+          <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+            <source src="./static/videos/01_controllable/14.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="section" style="display: flex; justify-content: center; align-items: center; height: auto;">
+    <div class="hero-body">
+      <div class="container" style="text-align: center; width: 100%; max-width: 1500px; margin-bottom: 1rem;">
+        <h2 class="title is-3 has-text-centered">Controllable Inbetweening: With Masks</h2>
+        <p>Using masks allows for greater control over generation. In these examples, 
+          the red mask indicates static regions, while the blue mask highlights areas of 
+          dynamic motion. The static mask ensures that specified regions remain stable 
+          while still adhering to the conditions of the last frame. Whereas, dynamic 
+          masks define areas of movement, providing more precise control over motion.</p>
+      </div>
+      <div class="container is-max-desktop text-align: center; width: 100%; max-width: 1500px; margin-bottom: 1rem;">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div style="width: 100%; max-width: 1000px;">
             <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
               <source src="./static/videos/01_controllable/03.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
-
-          <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
-
-
-          <div style="display: flex; width: 100%; max-width: 1200px; justify-content: space-between;">
-            <div style="width: 100%;">
-              <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                <source src="./static/videos/01_controllable/05.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          
-            <div style="width: 100%;">
-              <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                <source src="./static/videos/01_controllable/11.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-
-          <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
-
-          <div style="display: flex; width: 100%; max-width: 1200px; justify-content: space-between;">
-            <div style="width: 100%;">
-              <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                <source src="./static/videos/01_controllable/08.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          
-            <div style="width: 100%;">
-              <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                <source src="./static/videos/01_controllable/10.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-
-          <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
-<!--         
-          <p>Optionally can have multiple keyframes.</p>
+  
           <div style="width: 100%; max-width: 1000px;">
-            <video controls autoplay muted loop style="width: 70%; object-fit: cover;">
-              <source src="./static/videos/03_multi/01.mp4" type="video/mp4">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/01_controllable/05.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
-          </div> -->
-          
-          
-        </div>
-      </div>    
-</section>
-
-
-
-<!-- <section class="section" style="display: flex; justify-content: center; align-items: center; height: auto;">
-    <div class="container" style="text-align: center; width: 100%; max-width: 1500px; margin-bottom: 1rem;">
-
-        <h2 class="title is-3 has-text-centered">Seamless Looping</h2>
-        <p>Here we show some results by using trajectories and masks as inputs 
-            to control the inbteweening generation between the given input frames.</p>
-            <hr>
-        <div class="media-gallery" style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-          
-
-          <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
-          
-        </div>
-      </div>    
-</section> -->
-
-
-
-<section class="section" style="display: flex; justify-content: center; align-items: center; height: auto;">
-    <div class="container" style="text-align: center; width: 100%; max-width: 1500px; margin-bottom: 1rem;">
-
-        <h2 class="title is-3 has-text-centered">Seamless Looping</h2>
-        <p>Our model enables seamless looping video generation. With identical input frames, it creates smooth loops that follow 
-            motion trajectories, ideal for digital art, virtual environments, and background animations.</p>
-            <hr>
-        <!-- Video Gallery Section -->
-        <div class="media-gallery" style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-          
-            <div style="display: flex; width: 100%; max-width: 1200px; justify-content: space-between;">
-                <div style="width: 100%;">
-                  <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                    <source src="./static/videos/04_loop/01.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              
-                <div style="width: 100%;">
-                  <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                    <source src="./static/videos/04_loop/03.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              </div>
-
-          <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
-
-
-          <div style="display: flex; width: 100%; max-width: 1200px; justify-content: space-between;">
-            <div style="width: 100%;">
-              <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                <source src="./static/videos/04_loop/02.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          
-            <div style="width: 100%;">
-              <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                <source src="./static/videos/04_loop/04.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
+          </div>
+  
+          <div style="width: 100%; max-width: 1000px;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/01_controllable/11.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+  
+          <div style="width: 100%;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/01_controllable/08.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        
+          <div style="width: 100%;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/01_controllable/10.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           
         </div>
-      </div>    
-</section>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" style="display: flex; justify-content: center; align-items: center; height: auto;">
+    <div class="hero-body">
+      <div class="container" style="text-align: center; width: 100%; max-width: 1500px; margin-bottom: 1rem;">
+        <h2 class="title is-3 has-text-centered">Seamless Looping</h2>
+        <p>Our model enables seamless looping video generation. With identical input frames, it creates smooth loops that follow 
+          motion trajectories, ideal for digital art, virtual environments, and background animations.</p>
+      </div>
+      <div class="container is-max-desktop text-align: center; width: 100%; max-width: 1000px; margin-bottom: 1rem;">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div style="width: 100%; max-width: 1000px;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/04_loop/01.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+  
+          <div style="width: 100%; max-width: 1000px;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/04_loop/03.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+  
+          <div style="width: 100%; max-width: 1000px;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/04_loop/02.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+  
+          <div style="width: 100%;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/04_loop/04.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>  
+
+          <div style="width: 100%;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/04_loop/05.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
-<section class="section" style="display: flex; justify-content: center; align-items: center; height: auto;">
-    <div class="container" style="text-align: center; width: 100%; max-width: 1500px; margin-bottom: 1rem;">
 
+  <section class="section" style="display: flex; justify-content: center; align-items: center; height: auto;">
+    <div class="hero-body">
+      <div class="container" style="text-align: center; width: 100%; max-width: 1500px; margin-bottom: 1rem;">
         <h2 class="title is-3 has-text-centered">Refining T2V Outputs</h2>
         <p>Basic Text-to-Video (T2V) models rely solely on text for control, 
             which often falls short for detailed or larger motions, leading to
              undesired outputs. We demonstrate results in refining T2V outputs, 
              enhancing control.</p>
             <hr>
-        <div class="media-gallery" style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-        
-
-            <div style="width: 100%; max-width: 1000px;">
-                <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                  <source src="./static/videos/05_t2v/01.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
-
-
-              <div style="width: 100%; max-width: 1000px;">
-                <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                  <source src="./static/videos/05_t2v/02.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
-
-
-              <p>We may also use more than two frames for this purpose.</p>
-              <div style="width: 100%; max-width: 1000px;">
-                <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                  <source src="./static/videos/05_t2v/03.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
+      </div>
+      <div class="container is-max-desktop text-align: center; width: 100%; max-width: 1000px; margin-bottom: 1rem;">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div style="width: 100%; max-width: 1000px;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/05_t2v/01.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+  
+          <div style="width: 100%; max-width: 1000px;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/05_t2v/02.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+  
+          <div style="width: 100%; max-width: 1000px;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/05_t2v/03.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
           
+          </div>  
         </div>
-      </div>    
-</section>
+      </div>
+    </div>
+  </section>
 
 
 
-<section class="section" style="display: flex; justify-content: center; align-items: center; height: auto;">
-    <div class="container" style="text-align: center; width: 100%; max-width: 1500px; margin-bottom: 1rem;">
-
+  <section class="section" style="display: flex; justify-content: center; align-items: center; height: auto;">
+    <div class="hero-body">
+      <div class="container" style="text-align: center; width: 100%; max-width: 1500px; margin-bottom: 1rem;">
         <h2 class="title is-3 has-text-centered">Image Deformation</h2>
         <p>Given two input frames of the same object from different 
             camera locations, we use automatic motion extraction via optical 
             flow to generate the inbetween frames.</p>
             <hr>
-        <div class="media-gallery" style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-          
-        
-            <div style="display: flex; width: 100%; max-width: 1200px; justify-content: space-between;">
-                <div style="width: 100%;">
-                  <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                    <source src="./static/videos/06_deformation/01.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              
-                <div style="width: 100%;">
-                  <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                    <source src="./static/videos/06_deformation/03.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              </div>
-
-          <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
-          
+      </div>
+      <div class="container is-max-desktop text-align: center; width: 100%; max-width: 1000px; margin-bottom: 1rem;">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div style="width: 100%; max-width: 1000px;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/06_deformation/01.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+  
+          <div style="width: 100%; max-width: 1000px;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/06_deformation/03.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+  
+          <div style="width: 100%; max-width: 1000px;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/06_deformation/02.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
-      </div>    
-</section>
+      </div>
+    </div>
+  </section>
 
 
 
-
-<section class="section" style="display: flex; justify-content: center; align-items: center; height: auto;">
-    <div class="container" style="text-align: center; width: 100%; max-width: 1500px; margin-bottom: 1rem;">
-
+  <section class="section" style="display: flex; justify-content: center; align-items: center; height: auto;">
+    <div class="hero-body">
+      <div class="container" style="text-align: center; width: 100%; max-width: 1500px; margin-bottom: 1rem;">
         <h2 class="title is-3 has-text-centered">Camera Motion Generation</h2>
         <p>Here we show some results by using trajectories and masks as inputs 
             to control the inbteweening generation between the given input frames.</p>
             <hr>
-        <div class="media-gallery" style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-          
-        
-            <div style="display: flex; width: 100%; max-width: 1200px; justify-content: space-between;">
-                <div style="width: 100%;">
-                  <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                    <source src="./static/videos/07_camera/01.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              
-                <div style="width: 100%;">
-                  <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                    <source src="./static/videos/07_camera/03.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              </div>
-
-          <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
-          
+      </div>
+      <div class="container is-max-desktop text-align: center; width: 100%; max-width: 1000px; margin-bottom: 1rem;">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div style="width: 100%; max-width: 1000px;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/07_camera/01.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+  
+          <div style="width: 100%; max-width: 1000px;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/07_camera/03.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+  
+          <div style="width: 100%; max-width: 1000px;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/07_camera/02.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
-      </div>    
-</section>
-
-
-
-<section class="section" style="display: flex; justify-content: center; align-items: center; height: auto;">
-    <div class="container" style="text-align: center; width: 100%; max-width: 1500px; margin-bottom: 1rem;">
-
-        <h2 class="title is-3 has-text-centered">Guide Pixel Generation</h2>
-        <p>Example results using guide pixels for control: specific pixels are placed in target regions of the final frames..</p>
-            <hr>
-        <div class="media-gallery" style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-          
-            <div style="display: flex; width: 100%; max-width: 1200px; justify-content: space-between;">
-                <div style="width: 100%;">
-                  <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                    <source src="./static/videos/08_guide/01.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              
-                <div style="width: 100%;">
-                  <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                    <source src="./static/videos/08_guide/02.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              </div>
-
-          <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
-          
-        </div>
-      </div>    
-</section>
-
-<!-- <section class="section" style="display: flex; justify-content: center; align-items: center; height: auto;">    
-    <div class="container" style="text-align: center; width: 100%; max-width: 1500px; margin-bottom: 1rem;">
-        <h2 class="title is-3 has-text-centered">Multiple Frames</h2>
+      </div>
     </div>
-</section> -->
+  </section>
 
 
 
-<section class="section" style="display: flex; justify-content: center; align-items: center; height: auto;">
-    <div class="container" style="text-align: center; width: 100%; max-width: 1500px; margin-bottom: 1rem;">
+  <section class="section" style="display: flex; justify-content: center; align-items: center; height: auto;">
+    <div class="hero-body">
+      <div class="container" style="text-align: center; width: 100%; max-width: 1500px; margin-bottom: 1rem;">
+        <h2 class="title is-3 has-text-centered">Guide Pixel Generation</h2>
+        <p>Example results using guide pixels for control: specific pixels are placed in target regions of the final frames.</p>
+            <hr>
+      </div>
+      <div class="container is-max-desktop text-align: center; width: 100%; max-width: 1000px; margin-bottom: 1rem;">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div style="width: 100%; max-width: 1000px;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/08_guide/01.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+  
+          <div style="width: 100%; max-width: 1000px;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/08_guide/02.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="section" style="display: flex; justify-content: center; align-items: center; height: auto;">
+    <div class="hero-body">
+      <div class="container" style="text-align: center; width: 100%; max-width: 1500px; margin-bottom: 1rem;">
         <h2 class="title is-3 has-text-centered">Image Animation</h2>
         <p>Our model also animates single images by generating plausible motions given trajectories, enabling applications 
             like bringing static images to life and enhancing storytelling.</p>
             <hr>
-        <div class="media-gallery" style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-          
-
-        
-            <div style="width: 100%; max-width: 1000px;">
-                <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                  <source src="./static/videos/09_image/02.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-        
-
-          <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
+      </div>
+      <div class="container is-max-desktop text-align: center; width: 100%; max-width: 1000px; margin-bottom: 1rem;">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div style="width: 100%; max-width: 1000px;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/09_image/02.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
 
 
-          <div style="display: flex; width: 100%; max-width: 1200px; justify-content: space-between; align-items: center;">
+          <div style="width: 100%; max-width: 1000px;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/09_image/03.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+  
 
-            <div style="width: 20%; display: flex; justify-content: center;">
-              <video style="height: 30%; object-fit: cover;">
-                <source src="./static/videos/09_image/05_0.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          
-            <div style="width: 38%; display: flex; justify-content: center;">
-              <video controls autoplay muted loop style="height: 100%; object-fit: cover;">
-                <source src="./static/videos/09_image/05_1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          
-            <div style="width: 36%; display: flex; justify-content: center;">
-              <video controls autoplay muted loop style="height: 100%; object-fit: cover;">
-                <source src="./static/videos/09_image/05_2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          
-            
+          <div style="width: 100%; max-width: 1000px;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/09_image/04.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+
+          <div style="width: 100%; max-width: 1000px;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/09_image/01.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
 
         </div>
-      </div>    
-</section>
+      </div>
+    </div>
+  </section>
 
 
-<section class="section" style="display: flex; justify-content: center; align-items: center; height: auto;">
-    <div class="container" style="text-align: center; width: 100%; max-width: 1500px; margin-bottom: 1rem;">
-
+  <section class="section" style="display: flex; justify-content: center; align-items: center; height: auto;">
+    <div class="hero-body">
+      <div class="container" style="text-align: center; width: 100%; max-width: 1500px; margin-bottom: 1rem;">
         <h2 class="title is-3 has-text-centered">Comparison to Baseline</h2>
         <p>We compare our model to baselines also demonstrating its enhanced control 
             and ability to generate coherent motion.</p>
             <hr>
-        <div class="media-gallery" style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-          
-
-            <div style="width: 100%; max-width: 1000px;">
-                <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-                  <source src="./static/videos/02_baseline/01.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-          <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
+      </div>
+      <div class="container is-max-desktop text-align: center; width: 100%; max-width: 1000px; margin-bottom: 1rem;">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div style="width: 100%; max-width: 1000px;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/02_baseline/01.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
 
 
           <div style="width: 100%; max-width: 1000px;">
@@ -645,20 +605,23 @@
               Your browser does not support the video tag.
             </video>
           </div>
-      <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
+  
 
+          <div style="width: 100%; max-width: 1000px;">
+            <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
+              <source src="./static/videos/02_baseline/03.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
 
-      <div style="width: 100%; max-width: 1000px;">
-        <video controls autoplay muted loop style="width: 100%; object-fit: cover;">
-          <source src="./static/videos/02_baseline/03.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-  <hr style="border: 1px solid #959595; width: 80%; margin: 20px auto;">
-          
         </div>
-      </div>    
-</section>
+      </div>
+    </div>
+  </section>
+
+
+
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
